@@ -6,9 +6,9 @@
  *
  * @name invoker
  * @api public
- * @param {string} methodName Method to invoke on the receiver
+ * @param {string} method Method to invoke on the receiver.
  * @return {Function(receiver, ...args)} A function that, when called, will
- * invoke `methodName` on the receiver.
+ * invoke `method` on the receiver.
  * @example
  * var map = invoker('map');
  * map([1, 2, 3], function(num) {
@@ -17,14 +17,15 @@
  * //=> [2, 3, 4]
  */
 
-var invoker = function invoker(methodName) {
+var invoker = function invoker(method) {
   return function(receiver) {
-    var method = receiver[methodName];
+    var func = typeof method === 'function' ? method : receiver[method];
 
-    if (typeof method !== 'function') {
-      throw new TypeError('Expected a function but received a ' + typeof method);
+    if (typeof func !== 'function') {
+      throw new TypeError('Expected a function but received a ' + typeof func);
     }
-    return method.apply(receiver, Array.prototype.slice.call(arguments, 1));
+
+    return func.apply(receiver, Array.prototype.slice.call(arguments, 1));
   };
 };
 

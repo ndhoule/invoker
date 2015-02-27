@@ -15,10 +15,15 @@ describe('invoker', function() {
     assert.equal(invoker.length, 1);
   });
 
-  it('should invoke a method on a receiver', function() {
+  it('should invoke a named method on a receiver', function() {
     var toString = invoker('toString');
 
     assert.equal(toString({}), '[object Object]');
+  });
+
+  it('should accept functions as its method argument', function() {
+    var toString = invoker(Object.prototype.toString);
+    assert.equal(toString('fdsa'), '[object String]');
   });
 
   it('should throw a descriptive error when invoking a non-function', function() {
