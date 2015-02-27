@@ -1,0 +1,30 @@
+{
+  "name": "invoker",
+  "version": "1.0.0",
+  "description": "Creates a function that invokes a named method.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndhoule/invoker.git"
+  },
+  "keywords": [
+    "component"
+  ],
+  "author": "Nathan Houle <nathan@nathanhoule.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ndhoule/invoker/issues"
+  },
+  "homepage": "https://github.com/ndhoule/invoker",
+  "dependencies": {
+    "sinon": "^1.12.2"
+  },
+  "devDependencies": {
+    "esformatter-braces": "^1.0.0",
+    "esformatter-quotes": "^1.0.0",
+    "esformatter-semicolons": "^1.0.3",
+    "eslint": "^0.15.0",
+    "jsfmt": "^0.4.0",
+    "mocha": "^2.1.0"
+  }
+}
