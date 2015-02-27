@@ -1,6 +1,6 @@
 # invoker [![Circle CI][circleci-badge]][circleci-link]
 
-Creates a function that invokes a named method.
+Creates a function that invokes a given method.
 
 ## Installation
 
@@ -18,9 +18,9 @@ $ npm install invoker
 
 ## API
 
-### `invoker(method : string) => Function(receiver, ...args)`
+### `invoker(method : Function|string) => Function(receiver, ...args)`
 
-Accepts a method name and returns a function that invokes a method on a receiver.
+Accepts a method name or a function, and returns a function that invokes that method on a receiver.
 
 ```javascript
 var map = invoker('map');

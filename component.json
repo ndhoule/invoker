@@ -2,7 +2,7 @@
   "name": "invoker",
   "repo": "ndhoule/invoker",
   "version": "1.0.0",
-  "description": "Creates a function that invokes a named method.",
+  "description": "Creates a function that invokes a given method.",
   "keywords": [
   ],
   "license": "MIT",

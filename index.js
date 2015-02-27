@@ -6,7 +6,8 @@
  *
  * @name invoker
  * @api public
- * @param {string} method Method to invoke on the receiver.
+ * @param {Function|string} method The method name or function to invoke on the
+ * receiver.
  * @return {Function(receiver, ...args)} A function that, when called, will
  * invoke `method` on the receiver.
  * @example

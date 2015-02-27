@@ -1,7 +1,7 @@
 {
   "name": "invoker",
   "version": "1.0.0",
-  "description": "Creates a function that invokes a named method.",
+  "description": "Creates a function that invokes a given method.",
   "main": "index.js",
   "repository": {
     "type": "git",
