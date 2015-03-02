@@ -2,8 +2,8 @@
   "ecmaFeatures": {},
 
   "env": {
-    "browser": true,
-    "node": true
+    "node": true,
+    "browser": true
   },
 
   "rules": {
