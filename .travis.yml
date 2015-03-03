@@ -1,0 +1,22 @@
+language: node_js
+script: make test
+node_js:
+- 0.10.28
+matrix:
+  include:
+  - env: BROWSER_NAME=chrome BROWSER_VERSION=40
+  - env: BROWSER_NAME=chrome BROWSER_VERSION=39
+  - env: BROWSER_NAME=firefox BROWSER_VERSION=35
+  - env: BROWSER_NAME=firefox BROWSER_VERSION=34
+  - env: BROWSER_NAME=ie BROWSER_VERSION=6
+  - env: BROWSER_NAME=ie BROWSER_VERSION=7
+  - env: BROWSER_NAME=ie BROWSER_VERSION=8
+  - env: BROWSER_NAME=ie BROWSER_VERSION=9
+  - env: BROWSER_NAME=ie BROWSER_VERSION=10
+  - env: BROWSER_NAME=ie BROWSER_VERSION=11
+  - env: BROWSER_NAME=safari BROWSER_VERSION=8
+  - env: BROWSER_NAME=safari BROWSER_VERSION=7
+env:
+  global:
+  - secure: NlG9qwFjyrHbcQo+bp9nPo27t0+FgwU3Ue9vtA05KjfTpcHzJOK/zLaDNdqoTrAQwOIijE+uv//1niXSQbxso1Q1Tgbd+CMsOqNrZvNK1bN5G/yauiip7QUZQ9sRe/Y9nkM7UB1qXYM8fUeqzMfGzeeiv7/kNW3x53ccpHSOtms=
+  - secure: DsfUDyw+Se/Ut0Ao6bPVRjyuFxEaR8NIGlNCOBNTiQ+OTpzL8V+f1uvMTGy2to1AAFPr3v6e/6IE2yB7SJIlm4o2HxFShTWLcVbBM/YswIke78TP87LmVlvuk3r9s8g1R7nAWaBO9DTWykiWXBnj5Vto6rEir5CzpkoP4pvB+d4=
