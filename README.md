@@ -1,4 +1,4 @@
-# invoker [![Circle CI][circleci-badge]][circleci-link]
+# invoker [![CI][ci-badge]][ci-link]
 
 Creates a function that invokes a given method.
 
@@ -34,5 +34,5 @@ map([1, 2, 3], function(num) {
 
 Released under the [MIT license](LICENSE.md).
 
-[circleci-link]: https://circleci.com/gh/ndhoule/invoker
-[circleci-badge]: https://circleci.com/gh/ndhoule/invoker.svg?style=svg&circle-token=7104e1cc227460ef87cecb7094897fb11fd88a25
+[ci-link]: https://travis-ci.org/ndhoule/invoker
+[ci-badge]: https://travis-ci.org/ndhoule/invoker.svg?branch=master
