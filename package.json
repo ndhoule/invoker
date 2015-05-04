@@ -16,9 +16,7 @@
     "url": "https://github.com/ndhoule/invoker/issues"
   },
   "homepage": "https://github.com/ndhoule/invoker",
-  "dependencies": {
-    "sinon": "^1.12.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "esformatter-braces": "^0.1.7",
     "esformatter-quotes": "^1.0.0",
@@ -26,6 +24,7 @@
     "eslint": "^0.15.1",
     "jsfmt": "^0.4.0",
     "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
     "zuul": "^2.0.0"
   }
 }
