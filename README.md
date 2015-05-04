@@ -4,16 +4,9 @@ Creates a function that invokes a given method.
 
 ## Installation
 
-Browser:
-
 ```sh
-component install ndhoule/invoker
-```
-
-Node:
-
-```sh
-$ npm install invoker
+$ component install ndhoule/invoker
+$ npm install @ndhoule/invoker
 ```
 
 ## API
