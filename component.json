@@ -1,7 +1,7 @@
 {
   "name": "invoker",
   "repo": "ndhoule/invoker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a function that invokes a given method.",
   "keywords": [
   ],
