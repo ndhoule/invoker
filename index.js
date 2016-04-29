@@ -17,7 +17,6 @@
  * });
  * //=> [2, 3, 4]
  */
-
 var invoker = function invoker(method) {
   return function(receiver) {
     var func = typeof method === 'function' ? method : receiver[method];
@@ -30,7 +29,7 @@ var invoker = function invoker(method) {
   };
 };
 
-/**
+/*
  * Exports.
  */
 
